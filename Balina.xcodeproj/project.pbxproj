@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3040131A2ABF74C3001E2537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304013192ABF74C3001E2537 /* AppDelegate.swift */; };
+		3040131C2ABF74C3001E2537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040131B2ABF74C3001E2537 /* SceneDelegate.swift */; };
+		3040131E2ABF74C3001E2537 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040131D2ABF74C3001E2537 /* MainViewController.swift */; };
+		304013232ABF74CC001E2537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304013222ABF74CC001E2537 /* Assets.xcassets */; };
+		304013262ABF74CC001E2537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304013242ABF74CC001E2537 /* LaunchScreen.storyboard */; };
+		304013342ABF76F5001E2537 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304013332ABF76F5001E2537 /* APIService.swift */; };
+		304013502ABF7926001E2537 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040134F2ABF7926001E2537 /* GeneralResponse.swift */; };
+		304013552ABF7A93001E2537 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304013542ABF7A93001E2537 /* ContentView.swift */; };
+		3040135C2ABF7B35001E2537 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040135B2ABF7B35001E2537 /* Then.swift */; };
+		304013642AC0989E001E2537 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304013632AC0989E001E2537 /* ContentTableViewCell.swift */; };
+		3040136C2AC09AED001E2537 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3040136B2AC09AED001E2537 /* Configurable.swift */; };
+		3098936F2AC19AD800D75A32 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3098936E2AC19AD800D75A32 /* CameraService.swift */; };
+		309893722AC1C09B00D75A32 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309893712AC1C09B00D75A32 /* ContentViewModel.swift */; };
+		7D3322C9CD9035A1A37E1E2B /* Pods_Balina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A73B5181C1A894C632568A86 /* Pods_Balina.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		304013162ABF74C3001E2537 /* Balina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Balina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		304013192ABF74C3001E2537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3040131B2ABF74C3001E2537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3040131D2ABF74C3001E2537 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		304013222ABF74CC001E2537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		304013252ABF74CC001E2537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		304013272ABF74CC001E2537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304013332ABF76F5001E2537 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3040134F2ABF7926001E2537 /* GeneralResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
+		304013542ABF7A93001E2537 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3040135B2ABF7B35001E2537 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
+		304013632AC0989E001E2537 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		3040136B2AC09AED001E2537 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		3098936E2AC19AD800D75A32 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		309893712AC1C09B00D75A32 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		7BAC43C1BBF5768788623088 /* Pods-Balina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Balina.debug.xcconfig"; path = "Target Support Files/Pods-Balina/Pods-Balina.debug.xcconfig"; sourceTree = "<group>"; };
+		A73B5181C1A894C632568A86 /* Pods_Balina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Balina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1645D13D61DE873FB2D3C78 /* Pods-Balina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Balina.release.xcconfig"; path = "Target Support Files/Pods-Balina/Pods-Balina.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		304013132ABF74C3001E2537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3322C9CD9035A1A37E1E2B /* Pods_Balina.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3040130D2ABF74C3001E2537 = {
+			isa = PBXGroup;
+			children = (
+				304013182ABF74C3001E2537 /* Balina */,
+				304013172ABF74C3001E2537 /* Products */,
+				A27ED79D9146E2A8E2712298 /* Pods */,
+				4C7AF100182B958D3C897778 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		304013172ABF74C3001E2537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				304013162ABF74C3001E2537 /* Balina.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		304013182ABF74C3001E2537 /* Balina */ = {
+			isa = PBXGroup;
+			children = (
+				304013702AC0CFC2001E2537 /* Services */,
+				3040135A2ABF7AE5001E2537 /* Source */,
+				304013532ABF7A78001E2537 /* MainModule */,
+				3040134E2ABF78F9001E2537 /* Models */,
+				304013192ABF74C3001E2537 /* AppDelegate.swift */,
+				3040131B2ABF74C3001E2537 /* SceneDelegate.swift */,
+				304013222ABF74CC001E2537 /* Assets.xcassets */,
+				304013242ABF74CC001E2537 /* LaunchScreen.storyboard */,
+				304013272ABF74CC001E2537 /* Info.plist */,
+			);
+			path = Balina;
+			sourceTree = "<group>";
+		};
+		3040134E2ABF78F9001E2537 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3040134F2ABF7926001E2537 /* GeneralResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		304013532ABF7A78001E2537 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				309893742AC1C0A000D75A32 /* ViewModel */,
+				304013622AC09874001E2537 /* Cells */,
+				304013582ABF7A96001E2537 /* Views */,
+				3040131D2ABF74C3001E2537 /* MainViewController.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		304013582ABF7A96001E2537 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				304013542ABF7A93001E2537 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3040135A2ABF7AE5001E2537 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3040135B2ABF7B35001E2537 /* Then.swift */,
+				3040136B2AC09AED001E2537 /* Configurable.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		304013622AC09874001E2537 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				304013632AC0989E001E2537 /* ContentTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		304013702AC0CFC2001E2537 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				304013332ABF76F5001E2537 /* APIService.swift */,
+				3098936E2AC19AD800D75A32 /* CameraService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		309893742AC1C0A000D75A32 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				309893712AC1C09B00D75A32 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4C7AF100182B958D3C897778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A73B5181C1A894C632568A86 /* Pods_Balina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A27ED79D9146E2A8E2712298 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BAC43C1BBF5768788623088 /* Pods-Balina.debug.xcconfig */,
+				E1645D13D61DE873FB2D3C78 /* Pods-Balina.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		304013152ABF74C3001E2537 /* Balina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3040132A2ABF74CC001E2537 /* Build configuration list for PBXNativeTarget "Balina" */;
+			buildPhases = (
+				94334D044C147E3BD2615D47 /* [CP] Check Pods Manifest.lock */,
+				304013122ABF74C3001E2537 /* Sources */,
+				304013132ABF74C3001E2537 /* Frameworks */,
+				304013142ABF74C3001E2537 /* Resources */,
+				CE41A5489912BF2B041CDA36 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Balina;
+			productName = Balina;
+			productReference = 304013162ABF74C3001E2537 /* Balina.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3040130E2ABF74C3001E2537 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					304013152ABF74C3001E2537 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 304013112ABF74C3001E2537 /* Build configuration list for PBXProject "Balina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3040130D2ABF74C3001E2537;
+			productRefGroup = 304013172ABF74C3001E2537 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				304013152ABF74C3001E2537 /* Balina */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		304013142ABF74C3001E2537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304013262ABF74CC001E2537 /* LaunchScreen.storyboard in Resources */,
+				304013232ABF74CC001E2537 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94334D044C147E3BD2615D47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Balina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE41A5489912BF2B041CDA36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Balina/Pods-Balina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Balina/Pods-Balina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Balina/Pods-Balina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		304013122ABF74C3001E2537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3098936F2AC19AD800D75A32 /* CameraService.swift in Sources */,
+				3040136C2AC09AED001E2537 /* Configurable.swift in Sources */,
+				3040131E2ABF74C3001E2537 /* MainViewController.swift in Sources */,
+				309893722AC1C09B00D75A32 /* ContentViewModel.swift in Sources */,
+				304013342ABF76F5001E2537 /* APIService.swift in Sources */,
+				304013552ABF7A93001E2537 /* ContentView.swift in Sources */,
+				304013642AC0989E001E2537 /* ContentTableViewCell.swift in Sources */,
+				3040131A2ABF74C3001E2537 /* AppDelegate.swift in Sources */,
+				3040131C2ABF74C3001E2537 /* SceneDelegate.swift in Sources */,
+				304013502ABF7926001E2537 /* GeneralResponse.swift in Sources */,
+				3040135C2ABF7B35001E2537 /* Then.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		304013242ABF74CC001E2537 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				304013252ABF74CC001E2537 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		304013282ABF74CC001E2537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		304013292ABF74CC001E2537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3040132B2ABF74CC001E2537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BAC43C1BBF5768788623088 /* Pods-Balina.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Balina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Roman.Balina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3040132C2ABF74CC001E2537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1645D13D61DE873FB2D3C78 /* Pods-Balina.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Balina/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Roman.Balina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		304013112ABF74C3001E2537 /* Build configuration list for PBXProject "Balina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304013282ABF74CC001E2537 /* Debug */,
+				304013292ABF74CC001E2537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3040132A2ABF74CC001E2537 /* Build configuration list for PBXNativeTarget "Balina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3040132B2ABF74CC001E2537 /* Debug */,
+				3040132C2ABF74CC001E2537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3040130E2ABF74C3001E2537 /* Project object */;
+}
