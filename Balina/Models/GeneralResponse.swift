@@ -14,9 +14,9 @@ class GeneralResponse<T: Codable>: Codable {
 struct Content: Codable {
     let id: Int
     let name: String
+    let image: String?
 }
 
-/// Общая структура запросов API
-public struct SuccessApiResponse: Codable {
-//    public let id: String
+struct SuccessApiResponse: Codable {
+    public let id: String
 }

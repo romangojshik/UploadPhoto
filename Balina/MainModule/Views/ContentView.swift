@@ -91,7 +91,11 @@ extension ContentView: UITableViewDataSource {
         }
         
         let titles = contentViewModel.map { $0.name }
-        cell.configure(with: .init(title: titles[indexPath.row]))
+        let imageURLStrings = contentViewModel.map { $0.imageURLString }
+        cell.configure(with: .init(
+            title: titles[indexPath.row],
+            imageURLString: imageURLStrings[indexPath.row] ?? ""
+        ))
         return cell
         
     }

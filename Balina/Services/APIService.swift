@@ -9,9 +9,9 @@ import Foundation
 import Alamofire
 
 struct ServiceConstants {
-    static let APIPath = "https://junior.balinasoft.com/api/v2/photo/"
-    static let type = "type"
-    static let name = "Hoishyk Roman"
+    static let APIPath = "https://junior.balinasoft.com/api/v2/photo"
+    static let type = "/type"
+    static let userName = "Hoishyk Roman"
 }
 
 class APIService {
@@ -38,26 +38,26 @@ class APIService {
         }
     }
     
-    func uploadPhoto(
-        id: Int,
-        image: Data,
-        completion: @escaping (SuccessApiResponse?, Error?) -> Void
-    ) {
-        let parameters = [
-            "typeId": id,
-            "name": ServiceConstants.name,
-            "image": image
-        ] as [String : AnyObject]
-        AF.request(
-            ServiceConstants.APIPath,
-            method: .post,
-            parameters: parameters,
-            encoding: URLEncoding.default
-        )
-        .responseDecodable(of: SuccessApiResponse.self) { response in
+    func uploadPhoto(idTitle: Int, userImage: UIImage, completion: @escaping (Result<SuccessApiResponse?, Error>) -> Void) {
+        let url = ServiceConstants.APIPath
+        guard let imageData = userImage.jpegData(compressionQuality: 0.5) else { return }
+        let headers: HTTPHeaders = ["Content-type": "multipart/form-data"]
+        let params = ["name": ServiceConstants.userName, "typeId" : idTitle] as [String: AnyObject]
+        AF.upload(multipartFormData: { multiPart in
+            for (key, keyValue) in params {
+                 if keyValue is String || keyValue is Int {
+                    if let keyData = "\(keyValue)".data(using: .utf8) {
+                        multiPart.append(keyData, withName: key)
+                    }
+                 }
+             }
+            multiPart.append(imageData, withName: "photo", fileName: "fileName.jpg", mimeType: "image/jpeg")
+        }, to: url, headers: headers).responseDecodable(of: SuccessApiResponse.self) { response in
             switch response.result {
             case .success(let data):
-                completion(data, nil)
+                guard let apiDictionary = response.value else { return }
+                print("apiResponse --- \(apiDictionary)")
+                completion(.success(data))
             case .failure(let error):
                 let error = error
                 print(error.localizedDescription)
@@ -65,4 +65,3 @@ class APIService {
         }
     }
 }
-
